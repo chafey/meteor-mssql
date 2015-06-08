@@ -130,7 +130,7 @@ prepared statement. That function has a method that will unprepare the statement
 ```
 
 ```javascript
-    {
+    var opts = {
       sp : "SP_name",
       inputs : [ {
         name  : "param1",

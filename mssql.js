@@ -87,7 +87,7 @@ function storedProcedure (opts, cb) {
   });
 
   _.each(opts.outputs, function (name, type) {
-    request.output(name, type);
+    request.output(type, name);
   });
 
   request.execute(opts.sp, function(err, recordsets, returnValue) {
